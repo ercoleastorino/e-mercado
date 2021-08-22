@@ -15,11 +15,11 @@ function showListProductos(lista){
             <table>
                 <thead>
                     <tr>
-                        <td> <img width="150x" src= "`+ lista[i].imgSrc+ `">  </th>
+                        <th> <img width="150x" src= "`+ lista[i].imgSrc+ `">  </th>
                         <td> <strong id="center">`+ lista[i].name +`</strong>  <br>
                          `+ lista[i].description +` <br>
                          Precio: ` + lista[i].currency + ' ' + lista[i].cost + `
-                        </th>
+                        </td>
                     </tr>
   
                 </thead>
