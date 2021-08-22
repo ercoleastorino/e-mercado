@@ -6,9 +6,8 @@ var listProductos = [];
 
 function showListProductos(lista){
 
-    let articulos = "<br><br><br>";
+    let articulos = "<br><br>";
     for (let i = 0; i < lista.length; i++) {
-        /*let listaPro = lista[i];*/
 
         articulos += `
         
@@ -28,26 +27,11 @@ function showListProductos(lista){
              <br>
         
         `
-
-
-        /*
-
-        articulos += '<img width="150x" src= "'+ lista[i].imgSrc+ '">';
-        articulos += '<p>Nombre: ' + lista[i].name + '</p>';
-        articulos += '<p>' + lista[i].description + '</p>';
-        articulos += '<p>Precio: ' + lista[i].currency + ' ' + lista[i].cost + '</p>';
-        articulos += '<br><br><br>';
-
-        */
         
     }
     document.getElementById("product").innerHTML = articulos;
 
 }
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", function (e) {
